@@ -25,3 +25,11 @@ football={'rahul','rohit','messi','ronaldo'}
 print('players who play both:',cricket&football)
 print('players who play either:',cricket|football )
 print('players who play cricket but not football:',cricket-football)
+
+#tuple
+cities=('New York','London','Paris','Tokyo','Sydney')
+print(cities[0])
+#cities[0]='Berlin'  # This will raise an error because tuples are immutable
+print(cities.count('London'))
+print(cities.index('Paris'))
+
