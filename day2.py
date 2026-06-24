@@ -21,3 +21,22 @@ list=[i**2 for i in range (1,11)]
 newlist=[i for i in list if i%2==0]
 print(list)
 print(newlist)
+
+#scopes
+count=0 
+def func():
+    print(count)
+def func2():
+    count=10
+    print(count)
+def func3():
+    global count
+    count=10
+    print(count)
+func()
+func2()
+func3()
+
+#lambda function
+func = lambda x,y: max(x,y)
+print(func(2,4))
