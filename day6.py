@@ -38,3 +38,14 @@ def is_palindrome(s):
         print('palindrome')
 is_palindrome('racecar')
 is_palindrome('hello')
+
+#sliding window problem
+stock=eval(input('enter list of stock prices for each day in the form of list'))
+min_price=stock[0]
+max_profit=0
+for price in stock:
+    if min_price>price:
+        min_price=price
+    if price-min_price>max_profit:
+        max_profit= price-min_price
+print('max profit is:',max_profit)
