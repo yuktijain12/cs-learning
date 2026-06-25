@@ -23,3 +23,18 @@ def func():
     else:
         print('not anagram-method 2')
 func()
+
+
+#palindrome problem
+def is_palindrome(s):
+    s=s.lower()
+    for i in range(len(s)//2):
+        if s[i]==s[len(s)-i-1]:
+            continue
+        else:
+            print('not palindrome')
+            break
+    else:
+        print('palindrome')
+is_palindrome('racecar')
+is_palindrome('hello')
